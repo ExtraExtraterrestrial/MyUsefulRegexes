@@ -9,4 +9,5 @@ Warning:
 (?<value>                   - get value
     (?<!")[\w\/\-\\]+               - as contiguous string - additional allowed characers: \ / - _ 
     |(?<=")[\S ]*(?=")              - or a string with spaces contained within ""
-)"?                         - possibly match the following " for consistency
+)
+"?                         - possibly match the following " for consistency
