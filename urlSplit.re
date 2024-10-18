@@ -1,0 +1,2 @@
+(?<protocol>https?):\/\/(?<subdomain>[a-z0-9\.]*?)\.?(?<sld>[a-z0-9\-]+)\.(?<tld>(?:(?:co|com|org|gov|net|ed|edu)\.[a-z]{2})|[a-z]{2,})(?=\/|$)(?:(?<path>[^\s?]*)\??(?<args>[^\s]*))
+(?:(?<key>[a-zA-Z_][\w]*)=(?<value>[^\s&]*))
