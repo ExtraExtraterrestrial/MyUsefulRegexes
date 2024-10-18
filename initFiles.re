@@ -1,7 +1,7 @@
 ^[ \t]*(?<key>[a-zA-Z_][\w]*)[^\S\n]*=[^\S\n]*"?(?<value>(?<!")[\w\/\-\\]+|(?<=")[\S ]*(?="))"?
 
-
-make sure the -gm flags are enabled
+Warning:
+    Make sure the -gm flags are enabled.
 
 ^[ \t]*                     - allow for spaces and tabs at the start of the line
 (?<key>[a-zA-Z_][\w]*)      - get the key (has to start with a letter or _)
