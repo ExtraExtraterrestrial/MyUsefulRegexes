@@ -1,5 +1,5 @@
 (?<origin>(?<protocol>https?):\/\/(?<hostname>(?<subdomain>[a-z0-9\-\.]*?)\.?(?<sld>[a-z0-9\-]+)\.(?<tld>(?:(?:co|com|org|gov|net|ed|edu)\.[a-z]{2})|xn--[a-z0-9\-]{2,}|[a-z]{2,})))(?=\/|$)(?:(?<pathname>[^\s?]*)(?<search>\?[^\s]*))?
-(?<key>[a-zA-Z_][\w]*)=(?<value>[^\s&]*)
+(?<key>[a-zA-Z_][\w%]*)=(?<value>[^\s&]*)
 
 Regex to parse URL parameters on line 2
 
