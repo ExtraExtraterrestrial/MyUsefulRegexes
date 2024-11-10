@@ -1,5 +1,8 @@
 ^[ \t]*(?<key>[a-zA-Z_][\w]*)[^\S\n]*=[^\S\n]*"?(?<value>(?<!")[\w:\/\-\\]+|(?<=")[\S ]*(?="))"?
 
+Version for C++ - value is in group 2 if value in "" or group 3, so make sure to check for both groups
+^[ \\t]*([a-zA-Z_][\\w]*)[^\\S\\n]*=[^\\S\\n]*(?:(?:\"([\\S\\t ]*)\")|([\\w\\.:\\/\\-\\\\]+))
+
 Warning:
     Make sure the -gm flags are enabled.
 
