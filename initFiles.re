@@ -1,4 +1,4 @@
-^[ \t]*(?<key>[a-zA-Z_][\w]*)[^\S\n]*=[^\S\n]*"?(?<value>(?<!")[\w\/\-\\]+|(?<=")[\S ]*(?="))"?
+^[ \t]*(?<key>[a-zA-Z_][\w]*)[^\S\n]*=[^\S\n]*"?(?<value>(?<!")[\w:\/\-\\]+|(?<=")[\S ]*(?="))"?
 
 Warning:
     Make sure the -gm flags are enabled.
@@ -7,7 +7,7 @@ Warning:
 (?<key>[a-zA-Z_][\w]*)      - get the key (has to start with a letter or _)
 [^\S\n]*=[^\S\n]*"?         - equal sign
 (?<value>                   - get value
-    (?<!")[\w\/\-\\]+               - as contiguous string - additional allowed characers: \ / - _ 
+    (?<!")[\w\/\-\\]+               - as contiguous string - additional allowed characers: \ / : - _ 
     |(?<=")[\S ]*(?=")              - or a string with spaces contained within ""
 )
 "?                         - possibly match the following " for consistency
